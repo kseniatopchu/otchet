@@ -8,7 +8,7 @@ void main(void)
 	setlocale(LC_ALL, "rus");
 	srand(time(NULL));
 	int n=5;
-	printf("Привет");
+	printf("Hello world");
 	int* ptr = (int*)calloc(n, sizeof(int));
 	if (ptr == NULL)
 	{
