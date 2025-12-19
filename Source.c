@@ -15,6 +15,7 @@ void main(void)
 		printf("ошибка выделения памяти");
 		return 1;
 	}
+	printf("Массив из нулей: ")
 	for (int i = 0;i < n;i++)
 		printf("%5i", ptr[i]);
 	free(ptr);
