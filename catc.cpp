@@ -2,5 +2,5 @@
 #include<conio.h>
 void printWord()
 {
-	printf("Kitten");
+	printf("\nKitten\n");
 }

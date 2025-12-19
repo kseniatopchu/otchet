@@ -20,4 +20,5 @@ void main(void)
 		printf("%5i", ptr[i]);
 	free(ptr);
 	ptr = NULL;
+	printWord(n);
 }
