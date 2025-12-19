@@ -3,4 +3,5 @@
 void printWord()
 {
 	printf("Kitten");
+	printf("Puppy");
 }
