@@ -12,13 +12,12 @@ void main(void)
 	int* ptr = (int*)calloc(n, sizeof(int));
 	if (ptr == NULL)
 	{
-		printf("ошибка выделения памяти");
+		printf("\nошибка выделения памяти");
 		return 1;
 	}
-	printf("Массив из нулей: ")
+	printf("\nМассив из нулей: ");
 	for (int i = 0;i < n;i++)
 		printf("%5i", ptr[i]);
 	free(ptr);
 	ptr = NULL;
-	return 0;
 }
