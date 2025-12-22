@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<conio.h>
-void printWord()
+void printWord(int num)
 {
-	printf("\nKitten\n");
+	if (num%2!=0)
+		printf("Kitten");
+	else
+		printf("Puppy");
 }
