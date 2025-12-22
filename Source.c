@@ -1,24 +1,11 @@
 #include<stdio.h>
 #include<conio.h>
 #include<locale.h>
-#include<stdlib.h>
-#include<time.h>
 void main(void)
 {
 	setlocale(LC_ALL, "rus");
-	srand(time(NULL));
-	int n=5;
-	printf("Hello world");
-	int* ptr = (int*)calloc(n, sizeof(int));
-	if (ptr == NULL)
-	{
-		printf("\nошибка выделения памяти");
-		return 1;
-	}
-	printf("\nМассив из нулей: ");
-	for (int i = 0;i < n;i++)
-		printf("%5i", ptr[i]);
-	free(ptr);
-	ptr = NULL;
-	printWord(n);
+	int num;
+	printf("Введи число для вывода слова: ");
+	scanf_s("%i", &num);
+	printWord(num);
 }
